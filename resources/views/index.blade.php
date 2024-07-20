@@ -219,7 +219,7 @@
                                   <ul class="card-meta list-inline mb-0">
                                       <li class="list-inline-item mb-0">
                                         {{ \Carbon\Carbon::parse($post->Ngay)->format('Y/m/d') }}
-                                        --}}
+                                        
                                       </li>
                                   </ul>
                               </div>
