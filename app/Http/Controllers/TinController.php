@@ -15,7 +15,7 @@ class TinController extends Controller
         ->get();
 
         $editorsPick = DB::table('tin')
-        ->where('NoiBat', 1)
+        ->where('NoiBat', 0)
         ->orderBy('Ngay', 'desc')
         ->take(1)->get();
 
@@ -24,7 +24,7 @@ class TinController extends Controller
         ->take(3)->get();
 
         $popularPosts = DB::table('tin')
-        ->orderBy('Ngay', 'desc')
+        ->orderBy('Ngay', 'asc')
         ->take(1)->get();
 
         return view('index', compact('posts','editorsPick', 'trendingPosts', 'popularPosts'));

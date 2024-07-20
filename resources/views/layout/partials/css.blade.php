@@ -6,16 +6,16 @@
 <meta name="theme-name" content="reader" />
 
 <!-- plugins -->
-<link rel="stylesheet" href="client/css/bootstrap.min.css">
-<link rel="stylesheet" href="./client/plugins/themify-icons/themify-icons.css">
-<link rel="stylesheet" href="./client/plugins/slick/slick.css">
+<link rel="stylesheet" href="{{ config('app.url') }}/public/client/plugins/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="{{ config('app.url') }}/public/client/plugins/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="{{ config('app.url') }}/public/client/plugins/slick/slick.css">
 
 <!-- Main Stylesheet -->
-<link rel="stylesheet" href="./client/css/style.css" media="screen">
+<link rel="stylesheet" href="{{ config('app.url') }}/public/client/css/style.css" media="screen">
 
 <!--Favicon-->
-<link rel="shortcut icon" href="./client/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="./client/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="{{ config('app.url') }}/public/client/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="{{ config('app.url') }}/public/client/images/favicon.png" type="image/x-icon">
 
 <meta property="og:title" content="Reader | Hugo Personal Blog Template" />
 <meta property="og:description" content="This is meta description" />
