@@ -12,8 +12,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         @if ($t->urlHinh)
-                            <img src="{{ config('app.url') }}/public/client/images/{{$t->urlHinh }}" 
-                            class="card-img-top" alt="{{ $t->TieuDe }}" style="width: 250px center">
+                            <img src="{{ config('app.url') }}/public/storage/public/images/posts/{{$t->urlHinh }}" 
+                            class="card-img-top" alt="{{ $t->TieuDe }}" width="100px">
                         @endif
                         <div class="card-body">
                             <h5 class="card-title">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 
-                @if (($index + 1) % 2 == 0)
+                @if (($index + 1) % 3 == 0)
                     </div><div class="row">
                 @endif
             @endforeach
